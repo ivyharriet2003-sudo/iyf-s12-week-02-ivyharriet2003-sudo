@@ -1,18 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ivy Portfolio - Week 2</title>
+<title>Ivy Portfolio</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+html{scroll-behavior:smooth;}
+section{min-height:100vh; padding:80px 20px;}
+#home{background:#f9f5ff;}
+</style>
 </head>
 <body>
-
 <header>
 <nav>
 <h2>Ivy Harriet</h2>
-<ul class="nav-links">
+<ul class="nav-links" style="display:flex;gap:20px;list-style:none;">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#projects">Projects</a></li>
@@ -20,13 +23,29 @@
 </ul>
 </nav>
 </header>
-
 <main>
 <section id="home">
 <h1>Hello, I'm Ivy</h1>
-<p>Frontend Developer learning HTML & CSS - Week 2 Box Model & Layout</p>
-<a href="#projects" class="button btn-primary">View My Work</a>
-<a href="#contact" class="button btn-secondary">Contact Me</a>
+<p>Frontend Developer - Week 2</p>
+<a href="#projects" class="button btn-primary" style="background:purple;color:white;padding:10px 20px;">View My Work</a>
 </section>
-
-<section
+<section id="about">
+<h2>About Me</h2>
+<p>I am learning HTML, CSS Box Model at IYF S12.</p>
+</section>
+<section id="projects">
+<h2>My Projects</h2>
+<div class="projects-grid" style="display:grid;gap:15px;">
+<div class="card" style="border:1px solid #ddd;padding:15px;">Project 1 - Portfolio</div>
+<div class="card" style="border:1px solid #ddd;padding:15px;">Project 2 - Box Model</div>
+<div class="card" style="border:1px solid #ddd;padding:15px;">Project 3 - Responsive</div>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>ivyharriet2003@gmail.com</p>
+</section>
+</main>
+<footer><p>© 2026 Ivy</p></footer>
+</body>
+</html>
